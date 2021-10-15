@@ -16,7 +16,6 @@
 body {
   background-color: var(--two);
   color: var(--text);
-  height: 5000px;
 }
 
 a {
@@ -34,6 +33,7 @@ a {
   width: 100%;
   background-color: var(--one);
   z-index: 10;
+  transition: all 0.3s ease;
 }
 
 .cont {
@@ -94,12 +94,16 @@ hr {
 /*Aqui comienza el codigo para el slider*/
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 900px;
   margin: auto;
   overflow: hidden;
   position: relative;
   background-color: var(--one);
   box-shadow: 0 0 0 1em var(--one);
+  min-height: 90vh;
 }
 
 .slider {
@@ -107,6 +111,10 @@ hr {
   width: 500%;
   height: 400px;
   margin-left: -100%;
+}
+
+.slider-container {
+  position: relative;
 }
 
 .slider-section {
@@ -177,6 +185,5 @@ footer {
 
   .container {
     max-width: 75%;
-    max-height: 320px;
   }
 }

@@ -1,13 +1,14 @@
 let ubicacionprincipal = window.pageYOffset;
+const nav = document.querySelector("#nav");
 
 window.alert("Esta pagina es solo de uso academico");
 
 window.onscroll = function () {
   let desplazamiento_actual = window.pageYOffset;
   if (ubicacionprincipal >= desplazamiento_actual) {
-    document.getElementById("nav").style.top = "0";
+    nav.classList.remove("noheader");
   } else {
-    document.getElementById("nav").style.top = "-100px";
+    nav.classList.add("noheader");
   }
   ubicacionprincipal = desplazamiento_actual;
 };

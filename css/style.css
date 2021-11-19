@@ -13,6 +13,10 @@
   --com: #cccccc;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--two);
   color: var(--text);
